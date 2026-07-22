@@ -17,3 +17,12 @@ __pycache__/
 .DS_Store
 
 *.log
+
+
+# Sprint 3 outputs
+output/*.xlsx
+output/radar_charts/
+
+# Python cache
+__pycache__/
+*.pyc

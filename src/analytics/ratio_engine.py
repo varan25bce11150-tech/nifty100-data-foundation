@@ -82,8 +82,8 @@ class RatioEngine:
         pnl,
         bs,
         cf=None,
+        old_pnl=None,
     ):
-
         sales = pnl["sales"]
         operating_profit = pnl["operating_profit"]
         other_income = pnl["other_income"]
@@ -187,20 +187,46 @@ class RatioEngine:
             ratios["free_cash_flow_cr"] = None
             ratios["capex_intensity_pct"] = None
             ratios["fcf_conversion_pct"] = None
+# ---------------- CAGR ----------------
 
-        # ---------------- CAGR ----------------
-        # Will be populated after grouping company history
+if old_pnl:
 
-        ratios["revenue_cagr_5yr"] = None
-        ratios["revenue_cagr_5yr_flag"] = None
+    revenue, revenue_flag = revenue_cagr_5yr(
+        old_pnl["sales"],
+        sales,
+    )
 
-        ratios["pat_cagr_5yr"] = None
-        ratios["pat_cagr_5yr_flag"] = None
+    pat, pat_flag = pat_cagr_5yr(
+        old_pnl["net_profit"],
+        net_profit,
+    )
 
-        ratios["eps_cagr_5yr"] = None
-        ratios["eps_cagr_5yr_flag"] = None
+    eps_value, eps_flag = eps_cagr_5yr(
+        old_pnl["eps"],
+        eps,
+    )
 
-        # ---------------- Composite Score ----------------
+    ratios["revenue_cagr_5yr"] = revenue
+    ratios["revenue_cagr_5yr_flag"] = revenue_flag.value
+
+    ratios["pat_cagr_5yr"] = pat
+    ratios["pat_cagr_5yr_flag"] = pat_flag.value
+
+    ratios["eps_cagr_5yr"] = eps_value
+    ratios["eps_cagr_5yr_flag"] = eps_flag.value
+
+else:
+
+    ratios["revenue_cagr_5yr"] = None
+    ratios["revenue_cagr_5yr_flag"] = "INSUFFICIENT"
+
+    ratios["pat_cagr_5yr"] = None
+    ratios["pat_cagr_5yr_flag"] = "INSUFFICIENT"
+
+    ratios["eps_cagr_5yr"] = None
+    ratios["eps_cagr_5yr_flag"] = "INSUFFICIENT"      
+
+ # ---------------- Composite Score ----------------
 
         score = 0
 
@@ -339,6 +365,9 @@ class RatioEngine:
 
             cf = self.cf.get((company, year))
 
+            # Get financial data from 5 years earlier
+            old_pnl = self.pnl.get((company, year - 5))
+
             ratios = self.calculate_ratios(
 
                 company,
@@ -346,6 +375,7 @@ class RatioEngine:
                 pnl,
                 bs,
                 cf,
+                old_pnl,
 
             )
 
