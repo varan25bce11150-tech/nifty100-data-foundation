@@ -187,46 +187,46 @@ class RatioEngine:
             ratios["free_cash_flow_cr"] = None
             ratios["capex_intensity_pct"] = None
             ratios["fcf_conversion_pct"] = None
-# ---------------- CAGR ----------------
+    # ---------------- CAGR ----------------
 
-if old_pnl:
+    if old_pnl:
 
-    revenue, revenue_flag = revenue_cagr_5yr(
-        old_pnl["sales"],
-        sales,
-    )
+        revenue, revenue_flag = revenue_cagr_5yr(
+            old_pnl["sales"],
+            sales,
+        )
 
-    pat, pat_flag = pat_cagr_5yr(
-        old_pnl["net_profit"],
-        net_profit,
-    )
+        pat, pat_flag = pat_cagr_5yr(
+            old_pnl["net_profit"],
+            net_profit,
+        )
 
-    eps_value, eps_flag = eps_cagr_5yr(
-        old_pnl["eps"],
-        eps,
-    )
+        eps_value, eps_flag = eps_cagr_5yr(
+            old_pnl["eps"],
+            eps,
+        )
 
-    ratios["revenue_cagr_5yr"] = revenue
-    ratios["revenue_cagr_5yr_flag"] = revenue_flag.value
+        ratios["revenue_cagr_5yr"] = revenue
+        ratios["revenue_cagr_5yr_flag"] = revenue_flag.value
 
-    ratios["pat_cagr_5yr"] = pat
-    ratios["pat_cagr_5yr_flag"] = pat_flag.value
+        ratios["pat_cagr_5yr"] = pat
+        ratios["pat_cagr_5yr_flag"] = pat_flag.value
 
-    ratios["eps_cagr_5yr"] = eps_value
-    ratios["eps_cagr_5yr_flag"] = eps_flag.value
+        ratios["eps_cagr_5yr"] = eps_value
+        ratios["eps_cagr_5yr_flag"] = eps_flag.value
 
-else:
+    else:
 
-    ratios["revenue_cagr_5yr"] = None
-    ratios["revenue_cagr_5yr_flag"] = "INSUFFICIENT"
+        ratios["revenue_cagr_5yr"] = None
+        ratios["revenue_cagr_5yr_flag"] = "INSUFFICIENT"
 
-    ratios["pat_cagr_5yr"] = None
-    ratios["pat_cagr_5yr_flag"] = "INSUFFICIENT"
+        ratios["pat_cagr_5yr"] = None
+        ratios["pat_cagr_5yr_flag"] = "INSUFFICIENT"
 
-    ratios["eps_cagr_5yr"] = None
-    ratios["eps_cagr_5yr_flag"] = "INSUFFICIENT"      
+        ratios["eps_cagr_5yr"] = None
+        ratios["eps_cagr_5yr_flag"] = "INSUFFICIENT"      
 
- # ---------------- Composite Score ----------------
+     # ---------------- Composite Score ----------------
 
         score = 0
 
