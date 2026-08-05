@@ -35,31 +35,46 @@ from .confidence import (
 RuleResult = Optional[Dict[str, object]]
 
 
-def latest(df: pd.DataFrame) -> pd.Series:
-    return df.sort_values("year").iloc[-1]
+def latest(df: pd.DataFrame):
 
+    if df is None:
+        return None
+
+    if len(df) == 0:
+        return None
+
+    if "year" not in df.columns:
+        return None
+
+    return df.sort_values("year").iloc[-1]
 
 def last_n(df: pd.DataFrame, n: int) -> pd.DataFrame:
     return df.sort_values("year").tail(n)
 
 
 def increasing(series: pd.Series) -> bool:
-    values = list(series)
+
+    values = pd.Series(series).dropna().tolist()
+
+    if len(values) < 2:
+        return False
 
     return all(
         values[i] > values[i - 1]
         for i in range(1, len(values))
     )
 
-
 def decreasing(series: pd.Series) -> bool:
-    values = list(series)
+
+    values = pd.Series(series).dropna().tolist()
+
+    if len(values) < 2:
+        return False
 
     return all(
         values[i] < values[i - 1]
         for i in range(1, len(values))
     )
-
 
 def build_result(
     rule_id: str,
@@ -156,6 +171,8 @@ def rule_pro_02(df: pd.DataFrame) -> RuleResult:
 def rule_pro_03(df: pd.DataFrame) -> RuleResult:
 
     row = latest(df)
+    if row is None:
+        return None
 
     if row["debt_to_equity"] == 0:
 
@@ -181,6 +198,8 @@ def rule_pro_03(df: pd.DataFrame) -> RuleResult:
 def rule_pro_04(df: pd.DataFrame) -> RuleResult:
 
     row = latest(df)
+    if row is None:
+        return None
 
     value = row["revenue_cagr_5yr"]
 
@@ -213,6 +232,8 @@ def rule_pro_04(df: pd.DataFrame) -> RuleResult:
 def rule_pro_05(df: pd.DataFrame) -> RuleResult:
 
     row = latest(df)
+    if row is None:
+        return None
 
     value = row["operating_profit_margin_pct"]
 
@@ -245,6 +266,8 @@ def rule_pro_05(df: pd.DataFrame) -> RuleResult:
 def rule_pro_06(df: pd.DataFrame) -> RuleResult:
 
     row = latest(df)
+    if row is None:
+        return None
 
     value = row["pat_cagr_5yr"]
 
@@ -275,7 +298,8 @@ def rule_pro_06(df: pd.DataFrame) -> RuleResult:
 def rule_pro_07(df: pd.DataFrame) -> RuleResult:
 
     row = latest(df)
-
+    if row is None:
+        return None
     icr = row["interest_coverage"]
     label = str(row["icr_label"]).strip().lower()
 
@@ -347,6 +371,8 @@ def rule_pro_08(
 def rule_pro_09(df: pd.DataFrame) -> RuleResult:
 
     row = latest(df)
+    if row is None:
+        return None
 
     eps = row["eps_cagr_5yr"]
 
@@ -407,6 +433,8 @@ def rule_pro_10(df: pd.DataFrame) -> RuleResult:
 def rule_pro_11(df: pd.DataFrame) -> RuleResult:
 
     row = latest(df)
+    if row is None:
+        return None
 
     rev = row["revenue_cagr_5yr"]
     pat = row["pat_cagr_5yr"]
@@ -482,4 +510,398 @@ PRO_RULES = [
     rule_pro_10,
     rule_pro_11,
     rule_pro_12,
+]
+
+# ======================================================
+# CON RULE 1
+# Debt-to-Equity > 2 (Non Financial)
+# ======================================================
+
+def rule_con_01(df: pd.DataFrame) -> RuleResult:
+
+    row = latest(df)
+    if row is None:
+        return None
+
+    de = row["debt_to_equity"]
+
+    if pd.notna(de) and de > 2:
+
+        conf = score_from_threshold(
+            de,
+            2.0,
+        )
+
+        return build_result(
+            "CON_01",
+            "con",
+            (
+                f"Debt-to-equity ratio of {de:.2f} is elevated "
+                "for a non-financial company and warrants monitoring."
+            ),
+            conf,
+        )
+
+    return None
+
+
+# ======================================================
+# CON RULE 2
+# Negative FCF for 3 Years
+# ======================================================
+
+def rule_con_02(df: pd.DataFrame) -> RuleResult:
+
+    if len(df) < 3:
+        return None
+
+    recent = last_n(df, 3)
+
+    if (recent["free_cash_flow_cr"] < 0).all():
+
+        return build_result(
+            "CON_02",
+            "con",
+            (
+                "Free cash flow negative for three consecutive years "
+                "raises concern about cash generation quality."
+            ),
+            86,
+        )
+
+    return None
+
+
+# ======================================================
+# CON RULE 3
+# OPM declining for 3 years
+# ======================================================
+
+def rule_con_03(df: pd.DataFrame) -> RuleResult:
+
+    if len(df) < 3:
+        return None
+
+    recent = last_n(df, 3)
+
+    if decreasing(
+        recent["operating_profit_margin_pct"]
+    ):
+
+        return build_result(
+            "CON_03",
+            "con",
+            (
+                "Operating margins declining for three consecutive years "
+                "suggest pricing or cost pressure."
+            ),
+            82,
+        )
+
+    return None
+
+
+# ======================================================
+# CON RULE 4
+# Net Profit Negative
+# ======================================================
+
+def rule_con_04(
+    profit_df: pd.DataFrame,
+) -> RuleResult:
+
+    if profit_df.empty:
+        return None
+
+    row = latest(profit_df)
+
+    if row["net_profit"] < 0:
+
+        return build_result(
+            "CON_04",
+            "con",
+            (
+                "Company reported a net loss in the most recent financial year."
+            ),
+            90,
+        )
+
+    return None
+
+
+# ======================================================
+# CON RULE 5
+# Revenue declining 2 Years
+# ======================================================
+
+def rule_con_05(
+    profit_df: pd.DataFrame,
+) -> RuleResult:
+
+    if len(profit_df) < 2:
+        return None
+
+    recent = last_n(profit_df, 2)
+
+    if decreasing(
+        recent["sales"]
+    ):
+
+        return build_result(
+            "CON_05",
+            "con",
+            (
+                "Revenue contraction over two consecutive years "
+                "indicates demand weakness or market share loss."
+            ),
+            82,
+        )
+
+    return None
+
+
+# ======================================================
+# CON RULE 6
+# ICR <1.5
+# ======================================================
+
+def rule_con_06(df: pd.DataFrame) -> RuleResult:
+
+    row = latest(df)
+    if row is None:
+        return None
+
+    icr = row["interest_coverage"]
+
+    if pd.notna(icr) and icr < 1.5:
+
+        conf = score_from_threshold(
+            1.5,
+            icr,
+        )
+
+        return build_result(
+            "CON_06",
+            "con",
+            (
+                "Interest coverage ratio below 1.5x indicates the "
+                "company is at risk of not meeting its debt obligations."
+            ),
+            conf,
+        )
+
+    return None
+
+# ======================================================
+# CON RULE 7
+# Dividend Payout > 100%
+# ======================================================
+
+def rule_con_07(
+    profit_df: pd.DataFrame,
+) -> RuleResult:
+
+    if profit_df.empty:
+        return None
+
+    row = latest(profit_df)
+
+    payout = row["dividend_payout"]
+
+    if pd.notna(payout) and payout > 100:
+
+        conf = score_from_threshold(
+            payout,
+            100,
+        )
+
+        return build_result(
+            "CON_07",
+            "con",
+            (
+                "Dividend payout ratio above 100% means the company "
+                "is paying dividends from reserves, which is unsustainable."
+            ),
+            conf,
+        )
+
+    return None
+
+
+# ======================================================
+# CON RULE 8
+# Debt-to-Equity Rising 3 Years
+# ======================================================
+
+def rule_con_08(df: pd.DataFrame) -> RuleResult:
+
+    if len(df) < 3:
+        return None
+
+    recent = last_n(df, 3)
+
+    if increasing(recent["debt_to_equity"]):
+
+        return build_result(
+            "CON_08",
+            "con",
+            (
+                "Rising debt-to-equity ratio over three years suggests "
+                "increasing financial leverage risk."
+            ),
+            82,
+        )
+
+    return None
+
+
+# ======================================================
+# CON RULE 9
+# EPS Declining 3 Years
+# ======================================================
+
+def rule_con_09(
+    profit_df: pd.DataFrame,
+) -> RuleResult:
+
+    if len(profit_df) < 3:
+        return None
+
+    recent = last_n(profit_df, 3)
+
+    if decreasing(recent["eps"]):
+
+        return build_result(
+            "CON_09",
+            "con",
+            (
+                "Earnings per share declining for three consecutive years "
+                "reflects deteriorating profitability."
+            ),
+            84,
+        )
+
+    return None
+
+
+# ======================================================
+# CON RULE 10
+# ROCE < 10%
+# ======================================================
+
+def rule_con_10(df: pd.DataFrame) -> RuleResult:
+
+    row = latest(df)
+    if row is None:
+        return None
+
+    roce = row["return_on_capital_employed_pct"]
+
+    if pd.notna(roce) and roce < 10:
+
+        conf = score_from_threshold(
+            10,
+            roce,
+        )
+
+        return build_result(
+            "CON_10",
+            "con",
+            (
+                "Return on capital employed below 10% suggests the "
+                "business is not generating sufficient returns on invested capital."
+            ),
+            conf,
+        )
+
+    return None
+
+
+# ======================================================
+# CON RULE 11
+# High Borrowings
+# (Adapted because Net Debt / EBITDA is unavailable)
+# ======================================================
+
+def rule_con_11(
+    balance_df: pd.DataFrame,
+) -> RuleResult:
+
+    if balance_df.empty:
+        return None
+
+    row = latest(balance_df)
+
+    borrowings = row["borrowings"]
+    assets = row["total_assets"]
+
+    if (
+        pd.notna(borrowings)
+        and pd.notna(assets)
+        and assets > 0
+        and (borrowings / assets) > 0.50
+    ):
+
+        return build_result(
+            "CON_11",
+            "con",
+            (
+                "Borrowings constitute a significant proportion of total "
+                "assets, reducing financial flexibility."
+            ),
+            78,
+        )
+
+    return None
+
+
+# ======================================================
+# CON RULE 12
+# Revenue CAGR < 5%
+# ======================================================
+
+def rule_con_12(df: pd.DataFrame) -> RuleResult:
+
+    row = latest(df)
+    if row is None:
+        return None
+
+    cagr = row["revenue_cagr_5yr"]
+
+    if pd.notna(cagr) and cagr < 5:
+
+        conf = score_from_threshold(
+            5,
+            cagr,
+        )
+
+        return build_result(
+            "CON_12",
+            "con",
+            (
+                "Revenue growing below 5% CAGR over five years "
+                "suggests limited business momentum."
+            ),
+            conf,
+        )
+
+    return None
+
+# ======================================================
+# CON RULE REGISTRY
+# ======================================================
+
+CON_RULES = [
+    rule_con_01,
+    rule_con_02,
+    rule_con_03,
+    rule_con_04,
+    rule_con_05,
+    rule_con_06,
+    rule_con_07,
+    rule_con_08,
+    rule_con_09,
+    rule_con_10,
+    rule_con_11,
+    rule_con_12,
 ]

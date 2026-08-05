@@ -1,0 +1,417 @@
+company_id,type,rule_id,text,confidence_pct
+ABB,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,93
+ABB,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+ABB,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+ABB,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+ABB,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+ADANIENSOL,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,79
+ADANIENSOL,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+ADANIENSOL,con,CON_09,Earnings per share declining for three consecutive years reflects deteriorating profitability.,84
+ADANIENSOL,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+ADANIENT,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+ADANIENT,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+ADANIGREEN,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+ADANIGREEN,con,CON_01,Debt-to-equity ratio of 6.38 is elevated for a non-financial company and warrants monitoring.,69
+ADANIGREEN,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+ADANIPORTS,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+ADANIPORTS,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+ADANIPORTS,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+ADANIPORTS,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+ADANIPOWER,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,97
+ADANIPOWER,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+ADANIPOWER,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,82
+ADANIPOWER,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+ADANIPOWER,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+ADANIPOWER,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+AMBUJACEM,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+AMBUJACEM,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+APOLLOHOSP,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+APOLLOHOSP,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+APOLLOHOSP,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+ASIANPAINT,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,85
+ASIANPAINT,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+ASIANPAINT,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+ASIANPAINT,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+ASIANPAINT,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+ASIANPAINT,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+ASIANPAINT,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+ATGL,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+ATGL,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+AXISBANK,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,79
+AXISBANK,con,CON_01,Debt-to-equity ratio of 8.25 is elevated for a non-financial company and warrants monitoring.,72
+AXISBANK,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,75
+AXISBANK,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+BAJAJ-AUTO,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,76
+BAJAJ-AUTO,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+BAJAJ-AUTO,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+BAJAJ-AUTO,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+BAJAJ-AUTO,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+BAJAJFINSV,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,79
+BAJAJFINSV,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,84
+BAJAJFINSV,con,CON_01,Debt-to-equity ratio of 4.66 is elevated for a non-financial company and warrants monitoring.,65
+BAJAJFINSV,con,CON_02,Free cash flow negative for three consecutive years raises concern about cash generation quality.,86
+BAJAJFINSV,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+BAJAJFINSV,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+BAJAJHLDNG,pro,PRO_03,Debt-free balance sheet provides financial flexibility and eliminates interest burden.,90
+BAJAJHLDNG,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+BAJAJHLDNG,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+BAJAJHLDNG,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+BAJAJHLDNG,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+BAJAJHLDNG,pro,PRO_12,Growing asset base funded by internal accruals reflects self-sustaining growth.,88
+BAJAJHLDNG,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+BAJFINANCE,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,69
+BAJFINANCE,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+BAJFINANCE,con,CON_01,Debt-to-equity ratio of 3.74 is elevated for a non-financial company and warrants monitoring.,63
+BAJFINANCE,con,CON_02,Free cash flow negative for three consecutive years raises concern about cash generation quality.,86
+BAJFINANCE,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+BAJFINANCE,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,72
+BAJFINANCE,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+BANKBARODA,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+BANKBARODA,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+BANKBARODA,con,CON_01,Debt-to-equity ratio of 12.14 is elevated for a non-financial company and warrants monitoring.,80
+BANKBARODA,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+BANKBARODA,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,74
+BANKBARODA,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+BEL,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,97
+BEL,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+BEL,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+BEL,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+BHARTIARTL,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+BHARTIARTL,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+BHARTIARTL,con,CON_01,Debt-to-equity ratio of 2.59 is elevated for a non-financial company and warrants monitoring.,61
+BHEL,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+BHEL,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,72
+BHEL,pro,AUTO_PRO,Business exhibits at least one positive financial characteristic requiring further review.,61
+BOSCHLTD,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+BOSCHLTD,pro,PRO_03,Debt-free balance sheet provides financial flexibility and eliminates interest burden.,90
+BOSCHLTD,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+BOSCHLTD,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+BOSCHLTD,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+BOSCHLTD,pro,PRO_12,Growing asset base funded by internal accruals reflects self-sustaining growth.,88
+BOSCHLTD,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+BPCL,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+BPCL,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+BPCL,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+BRITANNIA,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,97
+BRITANNIA,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+BRITANNIA,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+BRITANNIA,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+BRITANNIA,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+CANBK,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+CANBK,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+CANBK,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+CANBK,con,CON_01,Debt-to-equity ratio of 14.87 is elevated for a non-financial company and warrants monitoring.,85
+CANBK,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+CANBK,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,74
+CANBK,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+CHOLAFIN,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,66
+CHOLAFIN,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+CHOLAFIN,con,CON_01,Debt-to-equity ratio of 7.38 is elevated for a non-financial company and warrants monitoring.,71
+CHOLAFIN,con,CON_02,Free cash flow negative for three consecutive years raises concern about cash generation quality.,86
+CHOLAFIN,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+CHOLAFIN,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,74
+CHOLAFIN,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+CIPLA,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+CIPLA,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+CIPLA,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+CIPLA,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+CIPLA,pro,PRO_12,Growing asset base funded by internal accruals reflects self-sustaining growth.,88
+CIPLA,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+COALINDIA,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,97
+COALINDIA,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+COALINDIA,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+COALINDIA,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+COALINDIA,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+COALINDIA,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+COALINDIA,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+DABUR,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+DABUR,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+DABUR,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+DABUR,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+DIVISLAB,pro,PRO_03,Debt-free balance sheet provides financial flexibility and eliminates interest burden.,90
+DIVISLAB,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,66
+DIVISLAB,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+DIVISLAB,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+DIVISLAB,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+DLF,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+DLF,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,76
+DLF,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+DLF,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+DLF,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,68
+DMART,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+DMART,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+DMART,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+DRREDDY,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+DRREDDY,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,67
+DRREDDY,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+DRREDDY,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+DRREDDY,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+EICHERMOT,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+EICHERMOT,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,62
+EICHERMOT,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+EICHERMOT,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+EICHERMOT,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+EICHERMOT,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+GAIL,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+GAIL,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+GAIL,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+GODREJCP,con,CON_04,Company reported a net loss in the most recent financial year.,90
+GODREJCP,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,71
+GODREJCP,pro,AUTO_PRO,Business exhibits at least one positive financial characteristic requiring further review.,61
+GRASIM,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+GRASIM,con,CON_09,Earnings per share declining for three consecutive years reflects deteriorating profitability.,84
+GRASIM,pro,AUTO_PRO,Business exhibits at least one positive financial characteristic requiring further review.,61
+HAL,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,97
+HAL,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,74
+HAL,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+HAL,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+HAL,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+HAVELLS,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+HAVELLS,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+HAVELLS,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+HCLTECH,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,77
+HCLTECH,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+HCLTECH,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+HCLTECH,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+HCLTECH,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+HCLTECH,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+HDFCBANK,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+HDFCBANK,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+HDFCBANK,con,CON_01,Debt-to-equity ratio of 6.81 is elevated for a non-financial company and warrants monitoring.,70
+HDFCBANK,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,70
+HDFCBANK,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+HDFCLIFE,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+HDFCLIFE,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+HDFCLIFE,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+HEROMOTOCO,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+HEROMOTOCO,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+HEROMOTOCO,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+HEROMOTOCO,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+HEROMOTOCO,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+HEROMOTOCO,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+HINDALCO,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+HINDALCO,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+HINDALCO,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+HINDALCO,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+HINDUNILVR,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+HINDUNILVR,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+HINDUNILVR,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+HINDUNILVR,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+HINDUNILVR,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+HINDUNILVR,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+ICICIBANK,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+ICICIBANK,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+ICICIBANK,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+ICICIBANK,con,CON_01,Debt-to-equity ratio of 6.45 is elevated for a non-financial company and warrants monitoring.,69
+ICICIBANK,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+ICICIBANK,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,70
+ICICIBANK,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+ICICIGI,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+ICICIGI,pro,PRO_03,Debt-free balance sheet provides financial flexibility and eliminates interest burden.,90
+ICICIGI,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+ICICIGI,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+ICICIGI,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+ICICIGI,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+ICICIPRULI,pro,PRO_03,Debt-free balance sheet provides financial flexibility and eliminates interest burden.,90
+ICICIPRULI,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+ICICIPRULI,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+ICICIPRULI,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+ICICIPRULI,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+INDIGO,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+INDIGO,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+INDIGO,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+INDIGO,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+INDIGO,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+INDIGO,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+INDUSINDBK,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+INDUSINDBK,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+INDUSINDBK,con,CON_01,Debt-to-equity ratio of 6.89 is elevated for a non-financial company and warrants monitoring.,70
+INDUSINDBK,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+INDUSINDBK,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,73
+INDUSINDBK,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+INFY,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,92
+INFY,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+INFY,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+INFY,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+INFY,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+IOC,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+IOC,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+IOC,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+IRCTC,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,97
+IRCTC,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,79
+IRCTC,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+IRCTC,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+IRCTC,pro,PRO_12,Growing asset base funded by internal accruals reflects self-sustaining growth.,88
+IRCTC,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+IRFC,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+IRFC,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+IRFC,con,CON_01,Debt-to-equity ratio of 7.83 is elevated for a non-financial company and warrants monitoring.,72
+IRFC,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,68
+IRFC,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+ITC,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,86
+ITC,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+ITC,pro,PRO_03,Debt-free balance sheet provides financial flexibility and eliminates interest burden.,90
+ITC,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,84
+ITC,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+ITC,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+ITC,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+JINDALSTEL,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+JINDALSTEL,pro,AUTO_PRO,Business exhibits at least one positive financial characteristic requiring further review.,61
+JIOFIN,pro,PRO_03,Debt-free balance sheet provides financial flexibility and eliminates interest burden.,90
+JIOFIN,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+JIOFIN,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+JIOFIN,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+JIOFIN,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,77
+JSWENERGY,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+JSWENERGY,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+JSWSTEEL,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+JSWSTEEL,pro,AUTO_PRO,Business exhibits at least one positive financial characteristic requiring further review.,61
+KOTAKBANK,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+KOTAKBANK,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+KOTAKBANK,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+KOTAKBANK,con,CON_01,Debt-to-equity ratio of 4.00 is elevated for a non-financial company and warrants monitoring.,64
+KOTAKBANK,con,CON_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations.,61
+KOTAKBANK,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,66
+KOTAKBANK,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+LICI,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,97
+LICI,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+LICI,pro,PRO_03,Debt-free balance sheet provides financial flexibility and eliminates interest burden.,90
+LICI,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+LICI,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+LICI,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+LODHA,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,62
+LODHA,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+LT,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,97
+LT,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+LT,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+LT,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+LTIM,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,83
+LTIM,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+LTIM,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+LTIM,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+LTIM,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+LTIM,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+M&M,pro,AUTO_PRO,Business exhibits at least one positive financial characteristic requiring further review.,61
+M&M,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+MARUTI,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+MARUTI,pro,PRO_03,Debt-free balance sheet provides financial flexibility and eliminates interest burden.,90
+MARUTI,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+MARUTI,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+MARUTI,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+MARUTI,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+MOTHERSON,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+MOTHERSON,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+MOTHERSON,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+MOTHERSON,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+NAUKRI,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,66
+NAUKRI,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+NAUKRI,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,75
+NESTLEIND,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,97
+NESTLEIND,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+NESTLEIND,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+NESTLEIND,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+NESTLEIND,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+NHPC,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+NHPC,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+NHPC,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+NHPC,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+NHPC,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+NHPC,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,62
+NTPC,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,68
+NTPC,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+NTPC,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+ONGC,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+ONGC,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+ONGC,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+ONGC,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+PFC,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,82
+PFC,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,83
+PFC,con,CON_01,Debt-to-equity ratio of 8.27 is elevated for a non-financial company and warrants monitoring.,73
+PFC,con,CON_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations.,62
+PFC,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,73
+PFC,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+PIDILITIND,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+PIDILITIND,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+PIDILITIND,pro,PRO_12,Growing asset base funded by internal accruals reflects self-sustaining growth.,88
+PIDILITIND,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+PNB,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,97
+PNB,con,CON_01,Debt-to-equity ratio of 3.68 is elevated for a non-financial company and warrants monitoring.,63
+PNB,con,CON_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations.,63
+PNB,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+POWERGRID,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+POWERGRID,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+POWERGRID,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+POWERGRID,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+RECLTD,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,85
+RECLTD,con,CON_01,Debt-to-equity ratio of 6.58 is elevated for a non-financial company and warrants monitoring.,69
+RECLTD,con,CON_02,Free cash flow negative for three consecutive years raises concern about cash generation quality.,86
+RECLTD,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+RECLTD,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,63
+RECLTD,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+RELIANCE,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+RELIANCE,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+SBILIFE,pro,PRO_03,Debt-free balance sheet provides financial flexibility and eliminates interest burden.,90
+SBILIFE,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+SBILIFE,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+SBIN,pro,AUTO_PRO,Business exhibits at least one positive financial characteristic requiring further review.,61
+SBIN,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+SHREECEM,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+SHREECEM,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+SHREECEM,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+SHRIRAMFIN,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,68
+SHRIRAMFIN,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+SHRIRAMFIN,con,CON_01,Debt-to-equity ratio of 3.97 is elevated for a non-financial company and warrants monitoring.,64
+SHRIRAMFIN,con,CON_02,Free cash flow negative for three consecutive years raises concern about cash generation quality.,86
+SHRIRAMFIN,con,CON_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations.,62
+SHRIRAMFIN,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,72
+SHRIRAMFIN,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+SIEMENS,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+SIEMENS,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+SIEMENS,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+SIEMENS,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+SUNPHARMA,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,64
+SUNPHARMA,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+SUNPHARMA,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+SUNPHARMA,pro,PRO_12,Growing asset base funded by internal accruals reflects self-sustaining growth.,88
+SUNPHARMA,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+TATACONSUM,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+TATACONSUM,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+TATACONSUM,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+TATACONSUM,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+TATAMOTORS,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+TATAMOTORS,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+TATAMOTORS,pro,PRO_12,Growing asset base funded by internal accruals reflects self-sustaining growth.,88
+TATAMOTORS,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+TATAPOWER,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+TATAPOWER,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+TATASTEEL,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+TATASTEEL,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+TATASTEEL,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+TATASTEEL,con,CON_05,Revenue contraction over two consecutive years indicates demand weakness or market share loss.,82
+TATASTEEL,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+TATASTEEL,con,CON_10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital.,63
+TCS,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,97
+TCS,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+TCS,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,63
+TCS,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+TCS,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+TCS,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+TECHM,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+TECHM,pro,PRO_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing.,88
+TECHM,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+TECHM,con,CON_03,Operating margins declining for three consecutive years suggest pricing or cost pressure.,82
+TITAN,pro,PRO_01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency.,90
+TITAN,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+TITAN,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+TITAN,con,CON_08,Rising debt-to-equity ratio over three years suggests increasing financial leverage risk.,82
+TITAN,con,CON_11,"Borrowings constitute a significant proportion of total assets, reducing financial flexibility.",78
+TORNTPHARM,pro,PRO_02,Strong free cash flow generation over 5 years signals healthy business fundamentals.,100
+TORNTPHARM,pro,PRO_05,Operating margin above 25% indicates strong pricing power and cost discipline.,73
+TORNTPHARM,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+TORNTPHARM,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+TORNTPHARM,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+TRENT,pro,PRO_08,Consistent dividend yield above 2% backed by positive free cash flow.,82
+TRENT,pro,PRO_10,Return on equity improving for three consecutive years shows strengthening business quality.,84
+TRENT,con,AUTO_CON,"No major financial weakness detected by automated screening, though periodic monitoring is recommended.",61
+TVSMOTOR,con,CON_02,Free cash flow negative for three consecutive years raises concern about cash generation quality.,86
+TVSMOTOR,pro,AUTO_PRO,Business exhibits at least one positive financial characteristic requiring further review.,61
