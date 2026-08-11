@@ -1,0 +1,93 @@
+company_id,cluster_id,cluster_name,distance_from_centroid
+ABB,0,Low Growth / Core,1.2573
+ADANIENSOL,0,Low Growth / Core,1.8588
+ADANIENT,2,FCF Growth Leaders,2.0201
+ADANIGREEN,1,Leveraged Growth,1.6747
+ADANIPORTS,3,High-Margin Businesses,1.6278
+ADANIPOWER,2,FCF Growth Leaders,1.3162
+AMBUJACEM,0,Low Growth / Core,1.3821
+APOLLOHOSP,2,FCF Growth Leaders,0.8509
+ASIANPAINT,2,FCF Growth Leaders,0.9238
+ATGL,2,FCF Growth Leaders,1.5183
+AXISBANK,1,Leveraged Growth,1.4777
+BAJAJ-AUTO,2,FCF Growth Leaders,1.1084
+BAJAJFINSV,1,Leveraged Growth,1.0748
+BAJAJHLDNG,3,High-Margin Businesses,1.9603
+BAJFINANCE,1,Leveraged Growth,1.7293
+BANKBARODA,1,Leveraged Growth,1.3115
+BEL,4,High ROE Compounders,0.4838
+BHARTIARTL,2,FCF Growth Leaders,2.1814
+BHEL,0,Low Growth / Core,1.5413
+BOSCHLTD,0,Low Growth / Core,0.6019
+BPCL,0,Low Growth / Core,1.3253
+BRITANNIA,4,High ROE Compounders,1.5471
+CANBK,1,Leveraged Growth,0.6137
+CHOLAFIN,1,Leveraged Growth,1.1535
+CIPLA,3,High-Margin Businesses,2.1391
+COALINDIA,3,High-Margin Businesses,1.9037
+DABUR,0,Low Growth / Core,0.3312
+DIVISLAB,2,FCF Growth Leaders,0.9262
+DLF,0,Low Growth / Core,1.4604
+DMART,0,Low Growth / Core,2.1084
+DRREDDY,0,Low Growth / Core,1.0184
+EICHERMOT,0,Low Growth / Core,0.6402
+GAIL,2,FCF Growth Leaders,0.9841
+GODREJCP,0,Low Growth / Core,1.0421
+GRASIM,0,Low Growth / Core,0.9377
+HAL,4,High ROE Compounders,0.7397
+HAVELLS,0,Low Growth / Core,0.8565
+HCLTECH,2,FCF Growth Leaders,0.5009
+HDFCBANK,1,Leveraged Growth,0.8826
+HDFCLIFE,3,High-Margin Businesses,1.6262
+HEROMOTOCO,3,High-Margin Businesses,1.9602
+HINDALCO,3,High-Margin Businesses,0.751
+HINDUNILVR,3,High-Margin Businesses,0.7813
+ICICIBANK,1,Leveraged Growth,0.5634
+ICICIGI,3,High-Margin Businesses,0.6285
+ICICIPRULI,3,High-Margin Businesses,2.1962
+INDIGO,4,High ROE Compounders,2.7727
+INDUSINDBK,1,Leveraged Growth,0.7959
+INFY,2,FCF Growth Leaders,1.1425
+IOC,0,Low Growth / Core,1.2226
+IRCTC,2,FCF Growth Leaders,1.185
+IRFC,1,Leveraged Growth,1.7275
+ITC,2,FCF Growth Leaders,1.3693
+JINDALSTEL,0,Low Growth / Core,1.2532
+JIOFIN,3,High-Margin Businesses,1.3403
+JSWENERGY,0,Low Growth / Core,1.4455
+JSWSTEEL,2,FCF Growth Leaders,1.0356
+KOTAKBANK,3,High-Margin Businesses,1.7258
+LICI,0,Low Growth / Core,1.9852
+LODHA,2,FCF Growth Leaders,2.6633
+LT,4,High ROE Compounders,0.9524
+LTIM,2,FCF Growth Leaders,1.7982
+M&M,0,Low Growth / Core,0.9877
+MARUTI,0,Low Growth / Core,0.7966
+MOTHERSON,0,Low Growth / Core,0.6116
+NAUKRI,2,FCF Growth Leaders,1.4269
+NESTLEIND,4,High ROE Compounders,1.0477
+NHPC,0,Low Growth / Core,1.7873
+NTPC,2,FCF Growth Leaders,0.8263
+ONGC,0,Low Growth / Core,0.8081
+PFC,1,Leveraged Growth,2.0029
+PIDILITIND,2,FCF Growth Leaders,0.5182
+PNB,4,High ROE Compounders,1.8344
+POWERGRID,3,High-Margin Businesses,1.5837
+RECLTD,1,Leveraged Growth,1.8082
+RELIANCE,2,FCF Growth Leaders,1.1378
+SBILIFE,2,FCF Growth Leaders,2.2644
+SBIN,1,Leveraged Growth,1.4345
+SHREECEM,0,Low Growth / Core,0.7732
+SHRIRAMFIN,1,Leveraged Growth,1.307
+SIEMENS,2,FCF Growth Leaders,1.0927
+SUNPHARMA,2,FCF Growth Leaders,0.8565
+TATACONSUM,0,Low Growth / Core,1.6665
+TATAMOTORS,2,FCF Growth Leaders,1.4064
+TATAPOWER,0,Low Growth / Core,1.2307
+TATASTEEL,2,FCF Growth Leaders,2.1608
+TCS,4,High ROE Compounders,1.4356
+TECHM,0,Low Growth / Core,1.1212
+TITAN,2,FCF Growth Leaders,1.7854
+TORNTPHARM,0,Low Growth / Core,1.1065
+TRENT,2,FCF Growth Leaders,2.0249
+TVSMOTOR,0,Low Growth / Core,1.1703
