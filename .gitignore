@@ -25,4 +25,4 @@ output/radar_charts/
 
 # Python cache
 __pycache__/
-*.pyc
+*.pyc.freebuff/ 
