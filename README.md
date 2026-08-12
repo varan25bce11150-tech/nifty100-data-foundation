@@ -484,6 +484,112 @@ Provides:
 
 
 
+\# ✅ Sprint 7 — Automated Report Generation (Completed)
+
+
+
+Static report generation for the Nifty100 universe, powered by the database and the earlier sprint engines.
+
+
+
+\## Report Modules
+
+
+
+\### 📄 Company Tearsheets
+
+
+
+One-page PNG tearsheet per company:
+
+
+
+\- Company header (name, sector, industry, market-cap category, Sprint 6 cluster)
+
+\- Key metrics strip (ROE, ROCE, OPM, NPM, D/E, quality, market cap, P/E)
+
+\- Revenue & profit, return metrics and cash-flow trend charts
+
+\- Latest 8 years of financial history table
+
+\- Sprint 5 pros & cons summary
+
+
+
+
+
+\### 🏭 Sector Reports
+
+
+
+One-page PNG report per sector:
+
+
+
+\- Average sector metrics (ROE, ROCE, margins, D/E, quality)
+
+\- Company quality ranking bar chart
+
+\- Top companies table by quality score
+
+
+
+
+
+\### 📊 Portfolio Summary
+
+
+
+Full-universe summary:
+
+
+
+\- Average market metrics strip
+
+\- Quality and market-cap charts by sector
+
+\- Top-10 companies by quality table
+
+\- output/portfolio_summary.csv (one row per company, enriched with Sprint 6 cluster labels)
+
+
+
+
+
+\## Generated Outputs
+
+
+
+\- reports/tearsheets/<COMPANY_ID>_tearsheet.png (92 files)
+
+\- reports/sectors/<sector>_report.png (10 files)
+
+\- reports/portfolio_summary.png
+
+\- output/portfolio_summary.csv
+
+
+
+
+
+\## Run Commands
+
+
+
+\- python -m src.reports.tearsheet
+
+\- python -m src.reports.sector_report
+
+\- python -m src.reports.portfolio_summary
+
+
+
+
+
+\---
+
+
+
 \# 🏗️ Project Architecture
 
 
@@ -603,4 +709,10 @@ Sprint 2  ✅ Complete
 Sprint 3  ✅ Complete
 
 Sprint 4  ✅ Complete
+
+Sprint 5  ✅ Complete
+
+Sprint 6  ✅ Complete
+
+Sprint 7  ✅ Complete
 
