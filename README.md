@@ -1,697 +1,347 @@
-\# 📈 Nifty100 Financial Analytics Platform
+# 📈 Nifty100 Financial Analytics Platform
 
+An end-to-end financial analytics platform built with Python, Pandas, SQLite and Streamlit to explore and compare Nifty100 companies using financial data, market metrics and peer analysis.
 
+The project started as a data engineering pipeline and gradually grew into a complete analytics platform with financial ratios, stock screeners, peer benchmarking, interactive dashboards and automated reports.
 
-A production-ready \*\*financial analytics and stock intelligence platform\*\* built using Python, SQLite, Streamlit, and data engineering best practices.
+## What the Project Does
 
+The platform takes raw financial and market data and turns it into useful company-level and sector-level analysis.
 
+It currently covers:
 
-The platform analyzes Nifty100 companies using financial statements, market data, financial ratios, peer benchmarking, screening algorithms, and interactive dashboards.
+- Data ingestion and validation
+- Financial ratio calculations
+- Company quality scoring
+- Stock screening
+- Peer comparison
+- Sector analysis
+- Market and valuation metrics
+- Interactive dashboards
+- Automated financial reports
 
 
+## 📊 Project Scale
 
-Built as a complete fintech analytics project covering:
+- 92 companies analyzed
+- 10 sectors
+- 50+ financial KPIs
+- 6 screening strategies
+- 11 peer groups
+- 92 company tearsheets
+- 10 sector reports
+- Portfolio-level summary reports
 
 
+# ✨ Main Features
 
-\- Data Engineering
+## 1. Data Engineering
 
-\- Financial Analytics
+The project includes a complete data ingestion and validation pipeline for bringing financial datasets into a structured SQLite database.
 
-\- Quantitative Metrics
+The pipeline handles:
 
-\- Stock Screening
+- Excel and CSV data loading
+- Data cleaning
+- Schema validation
+- Data quality checks
+- SQLite database creation
+- Financial data transformation
 
-\- Peer Comparison
+The database stores information such as:
 
-\- Interactive Visualization
+- Company details
+- Profit & loss data
+- Balance sheets
+- Cash flows
+- Stock prices
+- Financial ratios
+- Market capitalization
+- Peer groups
+- Sector information
 
-\- Dashboard Development
 
+## 2. Financial Analytics
 
+The analytics layer calculates more than 50 financial KPIs across profitability, leverage, efficiency, cash flow and growth.
 
+### Profitability
 
+- Net Profit Margin
+- Operating Profit Margin
+- Return on Equity (ROE)
+- Return on Capital Employed (ROCE)
+- Return on Assets (ROA)
 
-\---
+### Leverage
 
+- Debt to Equity Ratio
+- Interest Coverage Ratio
+- Debt-free detection
 
+### Efficiency
 
-\# 🚀 Project Overview
+- Asset Turnover
 
+### Cash Flow
 
+- Free Cash Flow
+- Capex Intensity
+- FCF Conversion
 
-The Nifty100 Financial Analytics Platform transforms raw financial datasets into meaningful investment insights.
+### Growth
 
+- Revenue CAGR (5 Years)
+- PAT CAGR (5 Years)
+- EPS CAGR (5 Years)
 
+### Quality Scoring
 
-The system performs:
+A composite quality score is used to compare companies across multiple financial metrics.
 
 
+# 🔍 Stock Screener
 
+The platform includes six predefined screening strategies:
 
+- Quality Compounder
+- Value Pick
+- Growth Accelerator
+- Dividend Champion
+- Debt Free Bluechip
+- Turnaround Watch
 
-\---
+The screener can filter companies using metrics such as:
 
+- ROE
+- ROCE
+- Net Margin
+- Operating Profit Margin
+- Debt/Equity
+- Interest Coverage
+- Free Cash Flow
+- Revenue/PAT growth
+- Market Capitalization
+- P/E Ratio
+- P/B Ratio
+- Dividend Yield
 
 
-\# ✨ Features
+# 👥 Peer Analysis
 
+Companies can be compared with their sector peers using peer groups and percentile rankings.
 
+The peer analysis engine includes:
 
-\## ✅ Sprint 1 — Data Foundation (Completed)
+- Sector-based peer groups
+- Peer clusters
+- Percentile rankings
+- Relative company comparison
 
+Some of the metrics used for comparison include:
 
+- ROE percentile
+- ROCE percentile
+- Profitability percentile
+- Growth percentile
+- Quality percentile
 
-\### ETL Pipeline
 
+# 📊 Streamlit Dashboard
 
+The project includes an interactive Streamlit dashboard for exploring the financial data and analytics.
 
-Implemented a complete data ingestion and validation pipeline.
+### Market Overview
 
+Provides an overview of:
 
+- Company universe
+- Financial records
+- Peer rankings
+- Market data
+- Sector distribution
 
-Features:
+### Company Profile
 
+Provides a detailed view of an individual company, including:
 
+- Company information
+- Financial ratios
+- Historical performance
+- Stock price movement
+- Radar comparison
 
-\- Excel/CSV data loading
+### Financial Screener
 
-\- Data cleaning
+Allows users to explore companies using the predefined screening strategies and financial filters.
 
-\- Schema validation
+### Peer Analysis
 
-\- SQLite database creation
+Shows:
 
-\- Data quality checks
+- Peer comparison
+- Percentile rankings
+- Relative performance
 
-
-
-
-
-Database tables:
-
-
-
-\---
-
-
-
-\# ✅ Sprint 2 — Financial Analytics Engine (Completed)
-
-
-
-The analytics engine calculates 50+ financial KPIs.
-
-
-
-Implemented metrics:
-
-
-
-\## Profitability
-
-
-
-\- Net Profit Margin
-
-\- Operating Profit Margin
-
-\- Return on Equity (ROE)
-
-\- Return on Capital Employed (ROCE)
-
-\- Return on Assets (ROA)
-
-
-
-
-
-\## Leverage
-
-
-
-\- Debt to Equity Ratio
-
-\- Interest Coverage Ratio
-
-\- Debt Free Detection
-
-
-
-
-
-\## Efficiency
-
-
-
-\- Asset Turnover
-
-
-
-
-
-\## Cash Flow
-
-
-
-\- Free Cash Flow
-
-\- Capex Intensity
-
-\- FCF Conversion
-
-
-
-
-
-\## Growth
-
-
-
-\- Revenue CAGR (5 Years)
-
-\- PAT CAGR (5 Years)
-
-\- EPS CAGR (5 Years)
-
-
-
-
-
-\## Quality Score
-
-
-
-Composite financial quality scoring system.
-
-
-
-\---
-
-
-
-\# ✅ Sprint 3 — Screener \& Peer Intelligence (Completed)
-
-
-
-\## Financial Screener
-
-
-
-Supports:
-
-
-
-\- Quality Compounder
-
-\- Value Pick
-
-\- Growth Accelerator
-
-\- Dividend Champion
-
-\- Debt Free Bluechip
-
-\- Turnaround Watch
-
-
-
-
-
-Custom filters:
-
-
-
-\- ROE
-
-\- ROCE
-
-\- Net Margin
-
-\- OPM
-
-\- Debt/Equity
-
-\- Interest Coverage
-
-\- Free Cash Flow
-
-\- CAGR Growth
-
-\- Market Cap
-
-\- PE Ratio
-
-\- PB Ratio
-
-\- Dividend Yield
-
-
-
-
-
-\---
-
-
-
-\## Peer Analysis Engine
-
-
-
-Implemented peer benchmarking using:
-
-
-
-\- Sector groups
-
-\- Peer clusters
-
-\- Percentile ranking
-
-
-
-
-
-Metrics:
-
-
-
-\- ROE percentile
-
-\- ROCE percentile
-
-\- Profitability percentile
-
-\- Growth percentile
-
-\- Quality percentile
-
-
-
-
-
-\---
-
-
-
-\# ✅ Sprint 4 — Financial Intelligence Dashboard (Completed)
-
-
-
-Interactive Streamlit dashboard.
-
-
-
-\## Dashboard Modules
-
-
-
-\### 🏠 Market Overview
-
-
-
-Displays:
-
-
-
-\- Company universe
-
-\- Financial records
-
-\- Peer rankings
-
-\- Market data statistics
-
-\- Sector distribution
-
-
-
-
-
-\---
-
-
-
-\### 🏢 Company Profile
-
-
-
-Provides:
-
-
-
-\- Company information
-
-\- Financial ratios
-
-\- Historical performance
-
-\- Stock price movement
-
-\- Radar comparison
-
-
-
-
-
-\---
-
-
-
-\### 🔍 Financial Screener
-
-
-
-Interactive screening interface connected with Sprint 3 engine.
-
-
-
-
-
-\---
-
-
-
-\### 👥 Peer Analysis
-
-
-
-Displays:
-
-
-
-\- Peer comparison
-
-\- Percentile rankings
-
-\- Relative performance
-
-
-
-
-
-\---
-
-
-
-\### 📈 Financial Trends
-
-
+### Financial Trends
 
 Visualizes:
 
+- Revenue trends
+- Profit trends
+- Margin changes
+- Growth patterns
 
+### Sector Analysis
 
-\- Revenue trends
+Provides analysis of:
 
-\- Profit trends
+- Sector distribution
+- Market capitalization
+- Industry performance
 
-\- Margin changes
+### Capital Analysis
 
-\- Growth analysis
+Tracks metrics such as:
 
-
-
-
-
-\---
-
-
-
-\### 🏭 Sector Analysis
-
-
-
-Analyzes:
-
-
-
-\- Sector distribution
-
-\- Market capitalization
-
-\- Industry performance
-
-
-
-
-
-\---
-
-
-
-\### 💰 Capital Analysis
-
-
-
-Tracks:
-
-
-
-\- ROE trends
-
-\- ROCE trends
-
-\- Capital efficiency
-
-
-
-
-
-\---
-
-
-
-\### 📄 Reports
-
-
-
-Provides:
-
-
-
-\- Exportable analysis
-
-\- Screening reports
-
-\- Financial summaries
-
-
-
-
-
-\---
-
-
-
-\# ✅ Sprint 7 — Automated Report Generation (Completed)
-
-
-
-Static report generation for the Nifty100 universe, powered by the database and the earlier sprint engines.
-
-
-
-\## Report Modules
-
-
-
-\### 📄 Company Tearsheets
-
-
-
-One-page PNG tearsheet per company:
-
-
-
-\- Company header (name, sector, industry, market-cap category, Sprint 6 cluster)
-
-\- Key metrics strip (ROE, ROCE, OPM, NPM, D/E, quality, market cap, P/E)
-
-\- Revenue & profit, return metrics and cash-flow trend charts
-
-\- Latest 8 years of financial history table
-
-\- Sprint 5 pros & cons summary
-
-
-
-
-
-\### 🏭 Sector Reports
-
-
-
-One-page PNG report per sector:
-
-
-
-\- Average sector metrics (ROE, ROCE, margins, D/E, quality)
-
-\- Company quality ranking bar chart
-
-\- Top companies table by quality score
-
-
-
-
-
-\### 📊 Portfolio Summary
-
-
-
-Full-universe summary:
-
-
-
-\- Average market metrics strip
-
-\- Quality and market-cap charts by sector
-
-\- Top-10 companies by quality table
-
-\- output/portfolio_summary.csv (one row per company, enriched with Sprint 6 cluster labels)
-
-
-
-
-
-\## Generated Outputs
-
-
-
-\- reports/tearsheets/<COMPANY_ID>_tearsheet.png (92 files)
-
-\- reports/sectors/<sector>_report.png (10 files)
-
-\- reports/portfolio_summary.png
-
-\- output/portfolio_summary.csv
-
-
-
-
-
-\## Run Commands
-
-
-
-\- python -m src.reports.tearsheet
-
-\- python -m src.reports.sector_report
-
-\- python -m src.reports.portfolio_summary
-
-
-
-
-
-\---
-
-
-
-\# 🏗️ Project Architecture
-
-
-
-\---
-
-
-
-\# 🛠️ Technology Stack
-
-
-
-\## Programming
-
-
-
-\- Python 3.13
-
-
-
-
-
-\## Data Engineering
-
-
-
-\- Pandas
-
-\- NumPy
-
-\- SQLite
-
-
-
-
-
-\## Analytics
-
-
-
-\- Financial Ratio Modeling
-
-\- CAGR Calculations
-
-\- Quantitative Scoring
-
-
-
-
-
-\## Visualization
-
-
-
-\- Plotly
-
-\- Matplotlib
-
-
-
-
-
-\## Dashboard
-
-
-
-\- Streamlit
-
-
-
-
-
-\## Database
-
-
-
-\- SQLite
-
-
-
-
-
-\---
-
-
-
-\# ⚙️ Installation
-
-
-
-Clone repository:
-
-
-
-```bash
+- ROE trends
+- ROCE trends
+- Capital efficiency
+
+### Reports
+
+Provides access to financial summaries, screening results and generated reports.
+
+
+# 📄 Automated Reports
+
+The project also generates static reports from the financial database.
+
+## Company Tearsheets
+
+A one-page report is generated for each company containing:
+
+- Company information
+- Sector and industry
+- Market-cap category
+- Key financial metrics
+- Revenue and profit trends
+- Return metrics
+- Cash-flow trends
+- Historical financial data
+- Pros and cons summary
+
+92 company tearsheets are currently generated.
+
+## Sector Reports
+
+Each sector receives a one-page report containing:
+
+- Average sector metrics
+- ROE and ROCE
+- Profitability margins
+- Debt/Equity
+- Quality metrics
+- Company quality rankings
+- Top companies by quality score
+
+10 sector reports are currently generated.
+
+## Portfolio Summary
+
+The portfolio-level report provides:
+
+- Overall market metrics
+- Quality analysis by sector
+- Market-cap analysis
+- Top companies by quality score
+- Company-level summary data
+
+The generated portfolio summary is also available as:
+
+`output/portfolio_summary.csv`
+
+
+# 🏗️ Project Architecture
+
+```text
+Raw Financial Data
+       │
+       ▼
+Data Ingestion
+       │
+       ▼
+Cleaning & Validation
+       │
+       ▼
+SQLite Database
+       │
+       ▼
+Financial Analytics
+       │
+       ├───────────────┐
+       ▼               ▼
+Stock Screener    Peer Analysis
+       │               │
+       └───────┬───────┘
+               ▼
+       Streamlit Dashboard
+               │
+               ▼
+       Automated Reports
+
+
+       🛠️ Technology Stack
+Programming
+Python 3.13
+Data Processing
+Pandas
+NumPy
+Database
+SQLite
+Financial Analytics
+Financial ratio modeling
+CAGR calculations
+Quantitative scoring
+Peer percentile analysis
+Visualization
+Plotly
+Matplotlib
+Dashboard
+Streamlit
+Testing
+Pytest
+📁 Project Structure
+
+nifty100-data-foundation/
+│
+├── data/
+├── output/
+├── reports/
+├── tests/
+│
+├── src/
+│   ├── dashboard/
+│   ├── analytics/
+│   ├── reports/
+│   └── ...
+│
+├── requirements.txt
+├── README.md
+└── nifty100.db
+
+
+⚙️ Installation
+
+Clone the repository:
 
 git clone https://github.com/varan25bce11150-tech/nifty100-data-foundation.git
+
 cd nifty100-data-foundation
 
 python -m venv venv
 
-venv\\Scripts\\activate
+venv\Scripts\activate
 
 pip install -r requirements.txt
 
@@ -699,17 +349,35 @@ streamlit run src/dashboard/app.py
 
 pytest
 
-Sprint 1  ✅ Complete
 
-Sprint 2  ✅ Complete
+csv
+📌 Development History
 
-Sprint 3  ✅ Complete
+The project was developed incrementally through multiple stages:
 
-Sprint 4  ✅ Complete
+Sprint 1 — Data Foundation
+Sprint 2 — Financial Analytics
+Sprint 3 — Screener & Peer Intelligence
+Sprint 4 — Financial Intelligence Dashboard
+Sprint 5 — NLP / Pros & Cons Analysis
+Sprint 6 — Company Clustering
+Sprint 7 — Automated Report Generation
 
-Sprint 5  ✅ Complete
+Each stage added another layer to the platform, from the initial data pipeline to the final analytics and reporting workflow.
 
-Sprint 6  ✅ Complete
+🚧 Future Improvements
 
-Sprint 7  ✅ Complete
+Some areas I would like to explore further:
 
+More real-time market data integration
+Additional valuation models
+More advanced portfolio analytics
+Improved dashboard filtering
+Automated data refresh workflows
+Cloud deployment
+More comprehensive test coverage
+👨‍💻 About
+
+This project was built as a hands-on project to understand how financial data can be collected, cleaned, stored and transformed into useful analytics.
+
+The main focus was on building the complete workflow rather than only creating individual financial charts or models.
