@@ -686,11 +686,8 @@ Clone repository:
 
 ```bash
 
-git clone https://github.com/varan25bce11150-tech/nifty100-project.git
-
-
-
-cd nifty100-project
+git clone https://github.com/varan25bce11150-tech/nifty100-data-foundation.git
+cd nifty100-data-foundation
 
 python -m venv venv
 
